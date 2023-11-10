@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+input {
+  caret-color: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* 对于 Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.pinInput {
+  box-sizing: border-box;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  width: 36px;
+  height: 36px;
+  margin: 10px 10px 20px;
+  text-align: center;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 3px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.focus {
+  border-color: #ffbd34;
+  border-width: 2px;
+}
+
+.invalid {
+  border-color: red;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
