@@ -9,16 +9,6 @@ input {
   caret-color: transparent;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* 对于 Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
 .pinInput {
   box-sizing: border-box;
   padding: 0;
@@ -41,6 +31,7 @@ input[type="number"] {
 
 .invalid {
   border-color: red;
+  border-width: 2px;
   animation: shake 0.5s;
 }
 
